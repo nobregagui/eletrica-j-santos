@@ -15,22 +15,72 @@ import {
   TextScroll,
   Title,
 } from "./styles";
-import dataHome from "../../data/dataHome.json";
 import ButtonComponent from "../Button";
 import { ThemeProvider } from "styled-components";
 import theme from "../../theme";
+import axios from "axios";
+import { useEffect, useState } from "react";
+
+interface IPropsDataHome {
+  title: string;
+  paragraph: string;
+  button: [
+    {
+      typeButton: string;
+      title: string;
+    }
+  ];
+  buttonScroll: {
+    src: string;
+    text: string;
+  };
+  imagesHome: {
+    woman: string;
+    ticket: string;
+    luminy: string;
+    starts: string;
+    balls: string;
+  };
+}
 
 export default function Home() {
+  const [data, setData] = useState<IPropsDataHome>({
+    title: "",
+    paragraph: "",
+    button: [
+      {
+        typeButton: "",
+        title: "",
+      },
+    ],
+    buttonScroll: {
+      src: "",
+      text: "",
+    },
+    imagesHome: {
+      woman: "",
+      ticket: "",
+      luminy: "",
+      starts: "",
+      balls: "",
+    },
+  });
+  useEffect(() => {
+    axios
+      .get("http://localhost:3001/pessoas")
+      .then((response) => setData(response.data))
+      .catch((error) => console.error(error));
+  }, []);
   return (
     <ThemeProvider theme={theme}>
       <Container>
         <ContainerText>
-          {dataHome.pessoas && (
+          {data && (
             <>
-              <Title>{dataHome.pessoas.title}</Title>
-              <SubTitle>{dataHome.pessoas.paragraph}</SubTitle>
+              <Title>{data?.title}</Title>
+              <SubTitle>{data.paragraph}</SubTitle>
               <ContainerButton>
-                {dataHome.pessoas.button.map((item, id) => (
+                {data.button.map((item, id) => (
                   <ButtonComponent
                     typeButton={
                       item.typeButton === "primary" ? "primary" : "secondary"
@@ -41,27 +91,23 @@ export default function Home() {
                 ))}
               </ContainerButton>
               <ContainerButtonScroll>
-                <ImageScroll src={dataHome.pessoas.buttonScroll.src} alt="" />
+                <ImageScroll src={data.buttonScroll.src} alt="" />
                 <TextScroll href="#section-products">
-                  {dataHome.pessoas.buttonScroll.text}
+                  {data.buttonScroll.text}
                 </TextScroll>
               </ContainerButtonScroll>
             </>
           )}
         </ContainerText>
         <ContainerImage>
-          <ImageWoman
-            width={"467px"}
-            src={dataHome.pessoas.imagesHome.woman}
-            alt=""
-          />
+          <ImageWoman width={"467px"} src={data.imagesHome.woman} alt="" />
           <ContainerImageLuminary>
-            <ImageTicket src={dataHome.pessoas.imagesHome.ticket} alt="" />
-            <img src={dataHome.pessoas.imagesHome.luminy} alt="" />
+            <ImageTicket src={data.imagesHome.ticket} alt="" />
+            <img src={data.imagesHome.luminy} alt="" />
           </ContainerImageLuminary>
-          <ImageStars src={dataHome.pessoas.imagesHome.starts} alt="" />
-          <ImageBalls src={dataHome.pessoas.imagesHome.balls} alt="" />
-          <ImageBallsSecondary src={dataHome.pessoas.imagesHome.balls} alt="" />
+          <ImageStars src={data.imagesHome.starts} alt="" />
+          <ImageBalls src={data.imagesHome.balls} alt="" />
+          <ImageBallsSecondary src={data.imagesHome.balls} alt="" />
         </ContainerImage>
       </Container>
     </ThemeProvider>

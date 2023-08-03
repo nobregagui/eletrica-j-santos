@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: ${props => props.theme.colors.backgroundGrayWeak};
+  background-color: ${(props) => props.theme.colors.backgroundGrayWeak};
   margin-top: 500px;
   margin-bottom: 106px;
   @media (max-width: 1150px) {
@@ -12,7 +12,7 @@ export const Container = styled.div`
 export const ContainerImages = styled.div`
   height: 329px;
   width: 945px;
-  background-color: ${props => props.theme.colors.secondary};
+  background-color: ${(props) => props.theme.colors.secondary};
   position: relative;
 `;
 
@@ -58,8 +58,10 @@ export const ContainerTitle = styled.div`
 `;
 
 export const Title = styled.h1`
+  position: relative;
+  z-index: 1;
   padding-top: 98px;
-  color: ${props => props.theme.colors.secondary};
+  color: ${(props) => props.theme.colors.secondary};
   text-align: center;
   font-family: Gotham;
   font-size: 35px;
@@ -78,7 +80,7 @@ export const ContainerText = styled.div`
 export const Description = styled.p`
   width: 100%;
   max-width: 555px;
-  color: ${props => props.theme.colors.text};
+  color: ${(props) => props.theme.colors.text};
   font-family: Gotham;
   font-size: 18px;
   font-style: normal;

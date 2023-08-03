@@ -6,21 +6,57 @@ import {
   Title,
   WrapperBackgroundImage,
 } from "./styles";
-import dataProducts from "../../data/dataProducts.json";
 import { ThemeProvider } from "styled-components";
 import theme from "../../theme";
+import { useEffect, useState } from "react";
+import axios from "axios";
+
+interface IPropsProducts {
+  imgBackground: string;
+  title: string;
+  products: [
+    {
+      urlImgProducts: string;
+      category: string;
+      titleProduct: string;
+      valueDesc: number;
+      valueInt: number;
+      timesInstallments?: number;
+    }
+  ];
+}
 
 export default function SectionProducts() {
+  const [data, setData] = useState<IPropsProducts>({
+    imgBackground: "",
+    title: "",
+    products: [
+      {
+        urlImgProducts: "",
+        category: "",
+        titleProduct: "",
+        valueDesc: 0,
+        valueInt: 0,
+        timesInstallments: 0,
+      },
+    ],
+  });
+  useEffect(() => {
+    axios
+      .get("http://localhost:3001/sectionProducts")
+      .then((response) => setData(response.data))
+      .catch((error) => console.error(error));
+  }, []);
   return (
     <ThemeProvider theme={theme}>
       <Container id="section-products">
         <WrapperBackgroundImage>
-          <BackgroundImage src={dataProducts.sectionProducts.imgBackground} />
-          <Title>{dataProducts.sectionProducts.title}</Title>
+          <BackgroundImage src={data.imgBackground} />
+          <Title>{data.title}</Title>
         </WrapperBackgroundImage>
         <ContainerProducts>
-          {dataProducts &&
-            dataProducts.sectionProducts.products.map((item, id) => (
+          {data &&
+            data.products.map((item, id) => (
               <CardProducs
                 key={id}
                 srcImgCard={item.urlImgProducts}

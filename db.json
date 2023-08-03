@@ -1,0 +1,218 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Home"
+    },
+    {
+      "id": 2,
+      "name": "Categorias",
+      "category": [
+        {
+          "name": "Lâmpadas",
+          "image": "../../img/lampadas.png"
+        },
+        {
+          "name": "Lustres",
+          "image": "../../img/lustres.png"
+        },
+        {
+          "name": "Luminárias",
+          "image": "../../img/luminarias.png"
+        },
+        {
+          "name": "Decorações",
+          "image": "../../img/decoracoes.png"
+        },
+        {
+          "name": "Acessórios",
+          "image": "../../img/acessorios.png"
+        },
+        {
+          "name": "Ferramentas",
+          "image": "../../img/ferramentas.png"
+        },
+        {
+          "name": "Utensílios Domésticos",
+          "image": "../../img/domesticos.png"
+        },
+        {
+          "name": "Cabos",
+          "image": "../../img/cabos.png"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Sobre"
+    },
+    {
+      "id": 4,
+      "name": "Localização"
+    },
+    {
+      "id": 5,
+      "name": "Contato"
+    }
+  ],
+  "pessoas": {
+    "title": "ILUMINE O SEU DIA A DIA!",
+    "paragraph": "Aqui na Elétrica J. Santos queremos trazer mais luz para o seu dia a dia! Temos produtos para toda sua casa com a melhor qualidade e atendimento da região!",
+    "button": [
+      {
+        "typeButton": "primary",
+        "title": "VEJA NOSSOS PRODUTOS"
+      },
+      {
+        "typeButton": "secondary",
+        "title": "NOS CONHEÇA MELHOR"
+      }
+    ],
+    "buttonScroll": {
+      "src": "../../img/arrowScroll.svg",
+      "text": "Role para ver mais"
+    },
+    "imagesHome": {
+      "woman": "../../img/mulherHome.png",
+      "luminy": "../../img/luminaria.png",
+      "ticket": "../../img/ticket.png",
+      "starts": "../../img/stars.png",
+      "balls": "../../img/bolinhas.png"
+    }
+  },
+  "dataFooter": {
+    "logoFooter": "../../img/logoFooter.png",
+    "textFooter": "Venha na Elétrica J. Santos e garanta a melhor opção para sua casa!",
+    "backGroundImage": "../../img/footerImage.png",
+    "textSocialMidia": "NOS SIGA NAS REDES",
+    "socialIcons": [
+      {
+        "urlImage": "../../img/logo-facebook.svg"
+      },
+      {
+        "urlImage": "../../img/logo-whatsapp.svg"
+      },
+      {
+        "urlImage": "../../img/logo-instagram.svg"
+      }
+    ],
+    "copyrigth": "© Copyright 2021 - Elétrica J. Santos - Todos os Direitos Reservados",
+    "credits": {
+      "author": "Desenvolvido por",
+      "urlImage": "../../img/iconAuthor.png"
+    }
+  },
+  "sectionCategory": {
+    "title": "CATEGORIAS",
+    "imgBackground": "../../img/bolinhaCategoria.png",
+    "products": [
+      {
+        "titleProduct": "Lâmpadas",
+        "urlImgProducts": "../../img/lampadaCategoria.png"
+      },
+      {
+        "titleProduct": "Lustres",
+        "urlImgProducts": "../../img/lustresCategoria.png"
+      },
+      {
+        "titleProduct": "Luminárias",
+        "urlImgProducts": "../../img/luminariaCategoria.png"
+      },
+      {
+        "titleProduct": "Decorações",
+        "urlImgProducts": "../../img/decoracaoCategoria.png"
+      },
+      {
+        "titleProduct": "Acessórios",
+        "urlImgProducts": "../../img/chuveiroCategoria.png"
+      },
+      {
+        "titleProduct": "Ferramentas",
+        "urlImgProducts": "../../img/ferramentaCategoria.png"
+      },
+      {
+        "titleProduct": "UTENSÍLIOS DOMÉSTICOS",
+        "urlImgProducts": "../../img/domesticoCategoria.png"
+      },
+      {
+        "titleProduct": "Cabos",
+        "urlImgProducts": "../../img/cabosCategoria.png"
+      }
+    ]
+  },
+  "about": {
+    "urlImgStore": "../../img/fotoLoja.png",
+    "urlImageBackground": "../../img/backgroundOrange.png",
+    "urlBall": "../../img/bolinhasSobre.png",
+    "iconAbout": "../../img/iconSobre.png",
+    "title": "Sua Melhor Opção",
+    "textAbout": "Desde 1970 somos especializados em materiais elétricos, sendo uma das principais distribuidoras do setor. Oferecemos os melhores produtos, com o preço que cabe no seu bolso e atende todas as necessidades do seu dia a dia.Aqui você irá encontrar lustres, luminárias, utilidades domésticas, ferramentas, acessórios, lâmpadas, fios e cabos, quadros de distribuição, caixas de entrada padrão Eletropaulo, materiais elétricos em geral, equipamentos de segurança e comunicação.",
+    "textButton": "Saiba Mais Sobre Nós"
+  },
+  "sectionProducts": {
+    "title": "PRODUTOS EM DESTAQUE",
+    "imgBackground": "../../img/backgroundSectionProducts.jpg",
+    "products": [
+      {
+        "titleProduct": "Lustre suspenso rústico",
+        "urlImgProducts": "../../img/produtosLustre.png",
+        "valueDesc": 1500,
+        "valueInt": 1000,
+        "timesInstallments": 3,
+        "category": "Lustres"
+      },
+      {
+        "titleProduct": "Lâmpada",
+        "urlImgProducts": "../../img/produtosLampada.png",
+        "valueDesc": 60,
+        "valueInt": 45,
+        "timesInstallments": 2,
+        "category": "Lâmpadas"
+      },
+      {
+        "titleProduct": "Lustre suspenso rústico",
+        "urlImgProducts": "../../img/produtosExtensao.png",
+        "valueDesc": 25,
+        "valueInt": 17,
+        "category": "Acessórios"
+      },
+      {
+        "titleProduct": "Kit de ferramentas",
+        "urlImgProducts": "../../img/produtosKit.png",
+        "valueDesc": 100,
+        "valueInt": 80,
+        "timesInstallments": 2,
+        "category": "Ferramentas"
+      },
+      {
+        "titleProduct": "Garfos de mesa inox",
+        "urlImgProducts": "../../img/produtosGarfos.png",
+        "valueDesc": 15,
+        "valueInt": 8,
+        "category": "Utensílios domésticos"
+      },
+      {
+        "titleProduct": "Lustre suspenso rústico",
+        "urlImgProducts": "../../img/produtosChuveiro.png",
+        "valueDesc": 120,
+        "valueInt": 100,
+        "timesInstallments": 4,
+        "category": "Acessórios"
+      },
+      {
+        "titleProduct": "Ventilador 2 em 1, mesa e parede",
+        "urlImgProducts": "../../img/produtosVentilador.png",
+        "valueDesc": 50,
+        "valueInt": 30,
+        "category": "Utensílios domésticos"
+      },
+      {
+        "titleProduct": "Lustre suspenso rústico",
+        "urlImgProducts": "../../img/produtosTomada.png",
+        "valueDesc": 20,
+        "valueInt": 10,
+        "category": "Acessórios"
+      }
+    ]
+  }
+}
