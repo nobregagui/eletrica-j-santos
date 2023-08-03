@@ -11,7 +11,7 @@ Elétrica J.Santos
 2. Abra o Visual Studio Code.
 3. Navegue até o diretório do projeto no Visual Studio Code.
 4. Instale as dependências do projeto com o comando npm install.
-5. Inicie o servidor JSON com o comando json-server --watch db.json --port 5000.
+5. Inicie o servidor JSON com o comando json-server --watch db.json --port 3001.
 6. Inicie o aplicativo React com o comando npm start.
 7. Acesse o aplicativo no navegador em http://localhost:3000.
 
