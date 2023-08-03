@@ -1,0 +1,27 @@
+{
+  "pessoas": {
+    "title": "ILUMINE O SEU DIA A DIA!",
+    "paragraph": "Aqui na Elétrica J. Santos queremos trazer mais luz para o seu dia a dia! Temos produtos para toda sua casa com a melhor qualidade e atendimento da região!",
+    "button": [
+      {
+        "typeButton": "primary",
+        "title": "VEJA NOSSOS PRODUTOS"
+      },
+      {
+        "typeButton": "secondary",
+        "title": "NOS CONHEÇA MELHOR"
+      }
+    ],
+    "buttonScroll": {
+      "src": "../../img/arrowScroll.svg",
+      "text": "Role para ver mais"
+    },
+    "imagesHome": {
+      "woman": "../../img/mulherHome.png",
+      "luminy": "../../img/luminaria.png",
+      "ticket": "../../img/ticket.png",
+      "starts": "../../img/stars.png",
+      "balls": "../../img/bolinhas.png"
+    }
+  }
+}

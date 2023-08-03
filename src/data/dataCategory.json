@@ -1,0 +1,40 @@
+{
+  "sectionCategory": {
+    "title": "CATEGORIAS",
+    "imgBackground": "../../img/bolinhaCategoria.png",
+    "products": [
+      {
+        "titleProduct": "Lâmpadas",
+        "urlImgProducts": "../../img/lampadaCategoria.png"
+      },
+      {
+        "titleProduct": "Lustres",
+        "urlImgProducts": "../../img/lustresCategoria.png"
+      },
+      {
+        "titleProduct": "Luminárias",
+        "urlImgProducts": "../../img/luminariaCategoria.png"
+      },
+      {
+        "titleProduct": "Decorações",
+        "urlImgProducts": "../../img/decoracaoCategoria.png"
+      },
+      {
+        "titleProduct": "Acessórios",
+        "urlImgProducts": "../../img/chuveiroCategoria.png"
+      },
+      {
+        "titleProduct": "Ferramentas",
+        "urlImgProducts": "../../img/ferramentaCategoria.png"
+      },
+      {
+        "titleProduct": "UTENSÍLIOS DOMÉSTICOS",
+        "urlImgProducts": "../../img/domesticoCategoria.png"
+      },
+      {
+        "titleProduct": "Cabos",
+        "urlImgProducts": "../../img/cabosCategoria.png"
+      }
+    ]
+  }
+}

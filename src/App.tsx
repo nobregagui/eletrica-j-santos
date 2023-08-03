@@ -1,22 +1,28 @@
-import React from 'react'
-import logo from './logo.svg'
+import React from "react";
 
-import { Container, Header, Logo } from './styles'
+import { Container, ContainerFooter } from "./styles";
+import Header from "./components/Header";
+import Home from "./components/SectionHome";
+import SectionCategory from "./components/SectionCategory";
+import Footer from "./components/Footer";
+import SectionSales from "./components/SectionSales";
+import SectionAbout from "./components/SectionAbout";
+import SectionProducts from "./components/SectionProducts";
 
 function App() {
   return (
     <Container>
-      <Header>
-        <Logo src={logo} alt="Sizebay logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a href="https://sizebay.com" target="_blank" rel="noopener noreferrer">
-          Learn about Sizebay
-        </a>
-      </Header>
+      <Header />
+      <Home />
+      <SectionProducts />
+      <SectionCategory />
+      <SectionAbout />
+      <ContainerFooter>
+        <SectionSales />
+        <Footer />
+      </ContainerFooter>
     </Container>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,0 +1,24 @@
+{
+  "dataFooter": {
+    "logoFooter": "../../img/logoFooter.png",
+    "textFooter": "Venha na Elétrica J. Santos e garanta a melhor opção para sua casa!",
+    "backGroundImage": "../../img/footerImage.png",
+    "textSocialMidia": "NOS SIGA NAS REDES",
+    "socialIcons": [
+      {
+        "urlImage": "../../img/logo-facebook.svg"
+      },
+      {
+        "urlImage": "../../img/logo-whatsapp.svg"
+      },
+      {
+        "urlImage": "../../img/logo-instagram.svg"
+      }
+    ],
+    "copyrigth": "© Copyright 2021 - Elétrica J. Santos - Todos os Direitos Reservados",
+    "credits": {
+      "author": "Desenvolvido por",
+      "urlImage": "../../img/iconAuthor.png"
+    }
+  }
+}
